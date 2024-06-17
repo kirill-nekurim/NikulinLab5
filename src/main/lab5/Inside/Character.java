@@ -30,7 +30,7 @@ public class Character {
     public boolean isDebuffed() {
         return turnsWithDebuff > 0;
     }
-    public void loseDebuffTurns (){
+    public void loseDebuffTurn (){
         if(turnsWithDebuff > 0){
             turnsWithDebuff--;
         }
@@ -45,16 +45,13 @@ public class Character {
     public void setPhoto(String path){
         icon = new ImageIcon(path);
     }
-    public ImageIcon getPhoto(){
-        return icon;
-    }
+    public ImageIcon getPhoto(){ return icon; }
     public void setLevel(int i){
         this.level =i;
     }
     public void addLevel(){
         this.level++;
     }
-    
     public void addHealth(int h){
         this.health +=h;
     }
@@ -67,10 +64,10 @@ public void setDamage(int d){
 public void addDamage(int d){
         this.damage +=d;
 }
-    public void setMaxhealth(int h){
+    public void setMaxHealth(int h){
         this.maxhealth = h;
     }
-    public void addMaxhealth(int h){
+    public void addMaxHealth(int h){
         this.maxhealth += h;
     }
     public int getLevel() {

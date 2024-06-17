@@ -1,4 +1,4 @@
-package mortalkombatbversion.src.main.lab5.Action;
+package mortalkombatbversion.src.main.lab5.Actions;
 
 import mortalkombatbversion.src.main.lab5.Inside.Character;
 

@@ -1,15 +1,15 @@
-package mortalkombatbversion.src.main.lab5.Action;
+package mortalkombatbversion.src.main.lab5.Actions;
 
 import mortalkombatbversion.src.main.lab5.Inside.Character;
 
-public class Block extends Action{
+public class Heal extends Action{
 
     /**
      * @return
      */
     @Override
     public String getType() {
-        return "Block";
+        return "Heal";
     }
 
     /**
@@ -19,5 +19,12 @@ public class Block extends Action{
      */
     @Override
     public void realisation(Character human, Character enemy, String enemyActionType) {
+        switch (enemyActionType) {
+            case "Hit", "Heal", "Debuff" -> {
+            }
+            case "Block" ->{
+            human.addHealth((human.getMaxHealth() - human.getHealth())/2);
+            }
+        }
     }
 }
