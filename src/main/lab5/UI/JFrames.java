@@ -511,7 +511,11 @@ public class JFrames extends javax.swing.JFrame {
         nextRoundButton.setText("Дальше");
         nextRoundButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nextRoundButtonActionPerformed(evt);
+                try {
+                    nextRoundButtonActionPerformed(evt);
+                } catch (URISyntaxException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
 
