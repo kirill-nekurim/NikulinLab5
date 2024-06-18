@@ -1,6 +1,7 @@
 package mortalkombatbversion.src.main.lab5.Inside;
 
 import javax.swing.*;
+import java.net.URL;
 
 /**
  *
