@@ -1,8 +1,6 @@
 package mortalkombatbversion.src.main.lab5.GameLogic;
 
 //ADD IMAGE!!!
-
-import mortalkombatbversion.src.main.lab5.*;
 import mortalkombatbversion.src.main.lab5.Actions.Block;
 import mortalkombatbversion.src.main.lab5.Actions.Debuff;
 import mortalkombatbversion.src.main.lab5.Actions.Heal;
