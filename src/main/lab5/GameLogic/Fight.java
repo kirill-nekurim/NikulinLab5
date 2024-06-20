@@ -27,9 +27,9 @@ public Location location = new Location();
 public  ArrayList<Action> actionsList = new ArrayList<>() {
     {
         add(new Hit());
-        add(new Heal());
-        add(new Debuff());
         add(new Block());
+        add(new Debuff());
+        add(new Heal());
     }
 };
     public void setMediator(Mediator mediator) {

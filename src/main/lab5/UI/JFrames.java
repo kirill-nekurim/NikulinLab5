@@ -10,7 +10,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -506,11 +505,7 @@ public class JFrames extends javax.swing.JFrame {
         nextRoundButton.setText("Дальше");
         nextRoundButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                try {
-                    nextRoundButtonActionPerformed(evt);
-                } catch (URISyntaxException e) {
-                    throw new RuntimeException(e);
-                }
+                nextRoundButtonActionPerformed(evt);
             }
         });
 
@@ -948,6 +943,7 @@ public class JFrames extends javax.swing.JFrame {
 
         attributePanel.setBackground(new java.awt.Color(153, 255, 0));
 
+        healthButton.setBackground(new java.awt.Color(153, 255, 0));
         healthButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         healthButton.setText("Здоровье");
         healthButton.addActionListener(new java.awt.event.ActionListener() {
@@ -956,6 +952,7 @@ public class JFrames extends javax.swing.JFrame {
             }
         });
 
+        damageButton.setBackground(new java.awt.Color(153, 255, 0));
         damageButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         damageButton.setSelected(true);
         damageButton.setText("Урон");
@@ -986,14 +983,13 @@ public class JFrames extends javax.swing.JFrame {
                 .addComponent(damageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(110, 110, 110))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, attributePanelLayout.createSequentialGroup()
-                .addContainerGap(156, Short.MAX_VALUE)
-                .addGroup(attributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, attributePanelLayout.createSequentialGroup()
-                        .addComponent(chooseAttributeButton)
-                        .addGap(284, 284, 284))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, attributePanelLayout.createSequentialGroup()
-                        .addComponent(levelUpLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(131, 131, 131))))
+                .addContainerGap(338, Short.MAX_VALUE)
+                .addComponent(chooseAttributeButton)
+                .addGap(284, 284, 284))
+            .addGroup(attributePanelLayout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addComponent(levelUpLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         attributePanelLayout.setVerticalGroup(
             attributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1178,7 +1174,7 @@ public class JFrames extends javax.swing.JFrame {
 
     }//GEN-LAST:event_blockButtonActionPerformed
 
-    private void nextRoundButtonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException {//GEN-FIRST:event_nextRoundButtonActionPerformed
+    private void nextRoundButtonActionPerformed(java.awt.event.ActionEvent evt)  {//GEN-FIRST:event_nextRoundButtonActionPerformed
         locationLabel.setText("Текущая локация: " + helper.fight.location.getCurrentLocation() + "/" + locationsNumber);
         if ((helper.fight.location.getCurrentEnemyNumber() + 1) <= helper.fight.location.getCurrentEnemies().size()) {
             enemyNumberLabel.setText("Номер противника: " + (helper.fight.location.getCurrentEnemyNumber() + 1) + "/" + helper.fight.location.getCurrentEnemies().size());
