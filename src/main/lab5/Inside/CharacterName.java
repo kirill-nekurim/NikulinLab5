@@ -5,7 +5,7 @@ package mortalkombatbversion.src.main.lab5.Inside;
  */
 public enum CharacterName {
     You("You"),
-    BARAKA ("Baraka"),
+    BARAKA ("Baraka "),
     SONYA_BLADE("Sonya-Blade"),
     LIU_KANG ("Liu-Kang"),
     SUB_ZERO ("Sub-Zero"),
