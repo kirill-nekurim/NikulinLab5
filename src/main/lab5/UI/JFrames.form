@@ -1308,20 +1308,12 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="attributePanel" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
+              <Component id="attributePanel" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="attributePanel" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
+              <Component id="attributePanel" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -1337,37 +1329,38 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Component id="healthButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
                       <Component id="damageButton" min="-2" pref="83" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="338" max="32767" attributes="0"/>
-                      <Component id="chooseAttributeButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="levelUpLabel" min="-2" pref="331" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                              <Component id="chooseAttributeButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <EmptySpace min="-2" pref="284" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
-                      <Component id="levelUpLabel" min="-2" pref="331" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="levelUpLabel" min="-2" pref="44" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="healthButton" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
                           <Component id="damageButton" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="chooseAttributeButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

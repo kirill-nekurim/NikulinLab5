@@ -34,9 +34,9 @@ public class Location {
     }
 
     private void setEnemyPhoto(Character enemy) {
-        File f = new File(System.getProperty("java.class.path"));
-        File dir = f.getAbsoluteFile().getParentFile();
-        String path = dir.toString();
+            File f = new File(System.getProperty("java.class.path"));
+            File dir = f.getAbsoluteFile().getParentFile();
+            String path = dir.toString();
         enemy.setPhoto(String.format("%s%s.jpg", path, "/" + enemy.getStringName()));
     }
 

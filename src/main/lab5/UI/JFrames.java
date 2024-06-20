@@ -277,7 +277,7 @@ public class JFrames extends javax.swing.JFrame {
 
         playerHeroLabel.setFont(new java.awt.Font("Comic Sans MS", 2, 14)); // NOI18N
         playerHeroLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        playerHeroLabel.setText("Mr. Crabs");
+        playerHeroLabel.setText("Mr.Mudriy");
 
         stunLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
         stunLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -799,7 +799,7 @@ public class JFrames extends javax.swing.JFrame {
 
         firstItemButton.setBackground(new java.awt.Color(190, 182, 135));
         firstItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        firstItemButton.setText("Малое зелье лечение, 0 шт");
+        firstItemButton.setText("Малое зелье лечение, 0 ");
         firstItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 firstItemButtonActionPerformed(evt);
@@ -808,7 +808,7 @@ public class JFrames extends javax.swing.JFrame {
 
         secondItemButton.setBackground(new java.awt.Color(190, 182, 135));
         secondItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        secondItemButton.setText("Большое зелье лечение, 0 шт");
+        secondItemButton.setText("Большое зелье лечение, 0 ");
         secondItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 secondItemButtonActionPerformed(evt);
@@ -817,7 +817,7 @@ public class JFrames extends javax.swing.JFrame {
 
         thirdItemButton.setBackground(new java.awt.Color(190, 182, 135));
         thirdItemButton.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        thirdItemButton.setText("Крест возрождения, 0 шт");
+        thirdItemButton.setText("Крест возрождения, 0 ");
         thirdItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 thirdItemButtonActionPerformed(evt);
@@ -977,49 +977,43 @@ public class JFrames extends javax.swing.JFrame {
         attributePanelLayout.setHorizontalGroup(
             attributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(attributePanelLayout.createSequentialGroup()
-                .addGap(85, 85, 85)
+                .addGap(18, 18, 18)
                 .addComponent(healthButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(167, 167, 167)
                 .addComponent(damageButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, attributePanelLayout.createSequentialGroup()
-                .addContainerGap(338, Short.MAX_VALUE)
-                .addComponent(chooseAttributeButton)
-                .addGap(284, 284, 284))
-            .addGroup(attributePanelLayout.createSequentialGroup()
-                .addGap(162, 162, 162)
-                .addComponent(levelUpLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, attributePanelLayout.createSequentialGroup()
+                .addContainerGap(65, Short.MAX_VALUE)
+                .addGroup(attributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(levelUpLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(attributePanelLayout.createSequentialGroup()
+                        .addGap(122, 122, 122)
+                        .addComponent(chooseAttributeButton)))
+                .addGap(284, 284, 284))
         );
         attributePanelLayout.setVerticalGroup(
             attributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, attributePanelLayout.createSequentialGroup()
-                .addGap(98, 98, 98)
+                .addGap(19, 19, 19)
                 .addComponent(levelUpLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(18, 18, 18)
                 .addGroup(attributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(healthButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(damageButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(59, 59, 59)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(chooseAttributeButton)
-                .addGap(57, 57, 57))
+                .addGap(201, 201, 201))
         );
 
         javax.swing.GroupLayout levelUpLayout = new javax.swing.GroupLayout(levelUp.getContentPane());
         levelUp.getContentPane().setLayout(levelUpLayout);
         levelUpLayout.setHorizontalGroup(
             levelUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(levelUpLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(attributePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(attributePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         levelUpLayout.setVerticalGroup(
             levelUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(levelUpLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(attributePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(attributePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setLocationsPanel.setBackground(new java.awt.Color(255, 153, 153));
