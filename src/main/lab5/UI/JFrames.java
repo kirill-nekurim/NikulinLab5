@@ -122,7 +122,6 @@ public class JFrames extends javax.swing.JFrame {
         playerDebuffLabel = new javax.swing.JLabel();
         endFightDialog = new javax.swing.JDialog();
         endFightPanel = new javax.swing.JPanel();
-        GIFLabel = new javax.swing.JLabel();
         nextRoundButton = new javax.swing.JButton();
         endRoundLabel = new javax.swing.JLabel();
         endGameDialog = new javax.swing.JDialog();

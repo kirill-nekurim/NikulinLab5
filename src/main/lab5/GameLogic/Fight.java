@@ -83,6 +83,9 @@ public  ArrayList<Action> actionsList = new ArrayList<>() {
                 if (enemy.getHealth() > 0) {
                     enemyMove(actionsList.get(1), enemyAction);
                 }
+                if (player.getHealth() <= 0) {
+                    mediator.gameEnding("You lost!", true);
+                }
             }
             case 1 -> {
                 playerMove(enemyAction, actionsList.get(0));
@@ -90,12 +93,18 @@ public  ArrayList<Action> actionsList = new ArrayList<>() {
                     enemyMove(actionsList.get(0),
                             enemyAction);
                 }
+                if (player.getHealth() <= 0) {
+                    mediator.gameEnding("You lost!", true);
+                }
             }
             case 2 -> {
                 playerMove(enemyAction, actionsList.get(2));
                 if (enemy.getHealth() > 0) {
                     enemyMove(actionsList.get(2),
                             enemyAction);
+                }
+                if (player.getHealth() <= 0) {
+                    mediator.gameEnding("You lost!", true);
                 }
             }
         }
